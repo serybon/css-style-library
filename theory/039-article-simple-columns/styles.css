@@ -1,0 +1,21 @@
+.column_1 {
+    column-count: 2;
+    column-gap: 5px;
+    text-align: justify;
+    border: 2px;
+    column-rule: 2px;
+    column-rule-style: dashed;
+
+}
+
+.column_1 h1,
+h2 {
+    column-span: all;
+    text-align: center;
+}
+
+h1,
+h2,
+p {
+    margin: 20px;
+}
