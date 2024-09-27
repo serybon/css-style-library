@@ -15,53 +15,113 @@
         body {
             /* Используется шрифт Montserrat для текста внутри body */
             font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            /* justify-content: center; */
+            /* justify-items: center; */
+            /* align-items: center; */
+            height: 100vh
+                /* align-items: center; */
         }
 
         .card {
             /* Цвет фона карточки */
             background-color: #fff;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: rgb(183, 183, 138);
+            padding: 10pxpx;
+            flex: 1 0 250px;
+            height: 310px;
+            box-shadow: 0 5px 5px #665050;
+            /* justify-items: center; */
+            text-align: center;
+
+
+
         }
 
         .card h2 {
             /* Внутренний отступ для заголовка h2 */
-            margin: 5px;
+            margin: 0px;
+            padding: 10px;
+            background-color: rgb(133, 133, 86);
+            color: azure;
+            text-align: center;
+            border: 1px solid rgb(60, 60, 38);
+            border-radius: 19px 19px 0 0;
+
         }
 
 
         .price {
             /* Размер шрифта цены */
-            font-size: 20px;
+            font-size: 24px;
             /* Жирное начертание для цены */
             font-weight: bold;
+            margin: 20px 20px 30px 20px;
+            color: crimson;
+            text-align: center;
         }
 
 
         .button {
             /* Цвет фона кнопки */
-            /* background-color: #4CAF50; */
+            background-color: aliceblue;
+            padding: 20px;
+            text-decoration: none;
+
+            border-radius: 20px;
+            text-align: center;
+            justify-content: center;
+            transition: background-color 0.2s linear;
         }
 
         .button:hover {
             /* Изменение цвета фона кнопки при наведении */
-            background-color: #37873b;
+            background-color: #ffffff;
         }
 
         ul {
             /* Удаление маркеров списка */
             list-style: none;
+            padding: 0;
+            text-align: center;
         }
 
         li {
             /* Внешний отступ элементов списка */
             margin: 5px 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
         }
+
+
 
         @media (max-width: 768px) {
             body {
+                display: flex;
                 /* Изменение направления отображения элементов при ширине экрана до 768px */
                 flex-direction: column;
                 /* Выравнивание элементов по центру при изменении направления */
                 align-items: center;
+                background-color: rgb(#665050, green, blue);
+                border: 1px solid red;
+                /* gap: 20px; */
+                /* height: 100vh; */
+
+            }
+
+            .card {
+                /* flex-basis: 200px; */
+                /* height: 500px; */
+                /* min-width: 200px; */
+                /* min-width: 200px; */
+                /* min-height: 310px; */
+                /* box-sizing: border-box; */
             }
         }
     </style>
@@ -70,7 +130,7 @@
 <body>
 
     <div class="card">
-        <h2>Базовая подписка</h2>
+        <h2>Базовая<br>подписка</h2>
         <ul>
             <li>✅ Бонус 1</li>
             <li>❎ Бонус 2</li>
@@ -78,10 +138,11 @@
         </ul>
         <div class="price">&#8381; 199/месяц</div>
         <a href="#" class="button">Подписаться</a>
+        <div></div>
     </div>
 
     <div class="card">
-        <h2>Продвинутая подписка</h2>
+        <h2>Продвинутая<br>подписка</h2>
         <ul>
             <li>✅ Бонус 1</li>
             <li>✅ Бонус 2</li>
@@ -92,7 +153,7 @@
     </div>
 
     <div class="card">
-        <h2>Премиум подписка</h2>
+        <h2>Премиум<br>подписка</h2>
         <ul>
             <li>✅ Бонус 1</li>
             <li>✅ Бонус 2</li>
