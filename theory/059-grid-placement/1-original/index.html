@@ -17,13 +17,24 @@
         .item {
             background-color: rgb(159, 142, 121);
             font-size: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        /* .teacher {} */
+        .teacher {
+            grid-column: span 2;
+        }
 
-        /* .scientist {} */
+        .scientist {
+            grid-row-start: 2;
+            grid-column: span 2;
+        }
 
-        /* .programmer {} */
+
+        .programmer {
+            grid-row: span 2;
+        }
     </style>
     <title>grid-placement</title>
 </head>

@@ -27,31 +27,23 @@
             background-color: #585858;
             color: white;
             padding: 10px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
         }
 
         .main {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
             padding: 10px;
         }
 
         .section {
             background-color: #c4c4c4;
+            width: 33%;
             padding: 10px;
 
         }
 
-        .side-item {
-            padding: 10px;
-            background-color: #908888;
-
-        }
-
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .container {
                 display: grid;
                 grid-template-rows: 50px auto 50px;
@@ -60,8 +52,8 @@
             }
 
             .main {
-                display: grid;
-                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
                 gap: 10px;
                 padding: 10px;
                 justify-content: center;
@@ -83,11 +75,7 @@
 <body>
     <div class="container">
         <div class="header">Header</div>
-        <div class="aside">
-            <div class="side-item">Side item</div>
-            <div class="side-item">Side item</div>
-            <div class="side-item">Side item</div>
-        </div>
+        <div class="aside">Side Panel</div>
         <div class="main">
             <div class="section">Content Section 1</div>
             <div class="section">Content Section 2</div>
